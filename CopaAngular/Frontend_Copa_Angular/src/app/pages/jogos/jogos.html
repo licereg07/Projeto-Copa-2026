@@ -1,0 +1,37 @@
+<div class="jogos-container">
+
+  <header class="navbar">
+    <button (click)="irParaJogos()">Jogos</button>
+    <button (click)="irParaRanking()">Ranking</button>
+    <button (click)="irParaConta()">Conta 👤</button>
+  </header>
+
+  <main class="conteudo">
+
+    <h1>Escolha uma categoria</h1>
+
+    <p class="subtitulo">
+      Teste seus conhecimentos sobre a Copa do Mundo
+    </p>
+
+    <section class="cards">
+
+      <div
+        class="card-jogo"
+        *ngFor="let jogo of jogos"
+        (click)="abrirRegras(jogo.id)">
+
+        <img [src]="jogo.imagem" [alt]="jogo.nome">
+
+        <div class="card-info">
+          <h2>{{ jogo.nome }}</h2>
+          <p>{{ jogo.perguntas }} perguntas</p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>

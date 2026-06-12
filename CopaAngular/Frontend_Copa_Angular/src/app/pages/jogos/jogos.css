@@ -1,0 +1,126 @@
+.jogos-container {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url('/images/imagemfundologin.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Barra superior */
+.navbar {
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  padding: 0 60px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+}
+
+/* Botões do menu */
+.navbar button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  color: #f2c300;
+}
+
+/* Conteúdo principal */
+.conteudo {
+  padding: 50px;
+  text-align: center;
+}
+
+.conteudo h1 {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Grade dos cards */
+.cards {
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+/* Card de cada jogo */
+.card-jogo {
+  height: 270px;
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.card-jogo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 35px rgba(0,0,0,0.6);
+}
+
+/* Imagem do card */
+.card-jogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Parte escura com nome e perguntas */
+.card-info {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.15),
+    rgba(0,0,0,0.75)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+  color: white;
+  text-align: left;
+}
+
+.card-info h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.card-info p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #f2c300;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    justify-content: center;
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,58 @@
+<div class="regras-container">
+
+  <header class="navbar">
+    <button (click)="irParaJogos()">Jogos</button>
+    <button (click)="irParaRanking()">Ranking</button>
+    <button (click)="irParaConta()">Conta 👤</button>
+  </header>
+
+  <main class="conteudo">
+
+    <div class="regras-card">
+
+      <img [src]="imagem" [alt]="titulo">
+
+      <div class="info">
+
+        <h1>{{ titulo }}</h1>
+
+        <p class="descricao">
+          {{ descricao }}
+        </p>
+
+        <div class="linha">
+          <strong>Quantidade de perguntas:</strong>
+          <span>{{ quantidadePerguntas }}</span>
+        </div>
+
+        <div class="pontuacao">
+          <h2>Pontuação</h2>
+
+          <p>🟢 Fácil → 35 pontos</p>
+          <p>🟡 Média → 65 pontos</p>
+          <p>🔴 Difícil → 100 pontos</p>
+        </div>
+
+        <div class="regras-lista">
+          <p>💡 Utilizar uma dica desconta 25 pontos.</p>
+          <p>⏭️ Pular uma pergunta desconta 25 pontos.</p>
+          <p>❌ Respostas incorretas não somam pontos.</p>
+        </div>
+
+        <div class="botoes">
+          <button class="comecar" (click)="comecarQuiz()">
+            Começar Quiz
+          </button>
+
+          <button class="voltar" (click)="voltar()">
+            Voltar para a tela inicial
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>

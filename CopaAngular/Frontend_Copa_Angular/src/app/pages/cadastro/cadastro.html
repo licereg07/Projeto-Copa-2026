@@ -1,0 +1,50 @@
+<div class="cadastro-container">
+
+    <div class="cadastro-card">
+
+        <h1>Quiz da Copa</h1>
+
+        <p class="subtitulo">
+            Crie sua conta para jogar
+        </p>
+
+        <label>Nickname</label>
+
+        <input
+            type="text"
+            [(ngModel)]="nickname"
+            placeholder="De 4 a 15 caracteres">
+
+        <label>Senha</label>
+
+        <input
+            type="password"
+            [(ngModel)]="senha"
+            placeholder="De 4 a 8 caracteres">
+
+        <label>Confirmar senha</label>
+
+        <input
+            type="password"
+            [(ngModel)]="confirmarSenha"
+            placeholder="Digite a senha novamente">
+
+        <button (click)="cadastrar()">
+            Cadastrar
+        </button>
+
+        <p class="login-texto">
+
+            Já possui uma conta?
+
+            <span (click)="voltarLogin()">
+
+                Entrar
+
+            </span>
+
+        </p>
+
+    </div>
+
+</div>

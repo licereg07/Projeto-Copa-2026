@@ -1,0 +1,100 @@
+<div class="quiz-container">
+
+  <button class="sair-btn" (click)="sairDoJogo()">
+    Sair do jogo
+  </button>
+
+  <div class="quiz-card" *ngIf="!carregando">
+
+    <div class="topo-quiz">
+      <h2>
+        Pergunta {{ indicePergunta + 1 }} de {{ perguntas.length }}
+      </h2>
+
+      <span class="dificuldade">
+        {{ perguntaAtual.dificuldade }} • {{ perguntaAtual.pontos }} pts
+      </span>
+    </div>
+
+    <div class="imagem-area">
+      <img [src]="obterImagem()" [alt]="perguntaAtual.enunciado">
+    </div>
+
+    <h1 class="enunciado">
+      {{ perguntaAtual.enunciado }}
+    </h1>
+
+    <div class="alternativas">
+
+      <div
+        class="alternativa"
+        *ngFor="let alternativa of alternativas"
+        [class.selecionada]="alternativaSelecionada === alternativa.letra"
+        [class.bloqueada]="respondeuPergunta"
+        (click)="selecionarAlternativa(alternativa.letra)">
+
+        <span class="bolinha"></span>
+
+        <p>
+          {{ alternativa.texto }}
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="dica-box" *ngIf="mostrarDica">
+      💡 {{ perguntaAtual.dica }}
+    </div>
+
+    <p class="resposta-registrada" *ngIf="respondeuPergunta">
+      Resposta registrada. Clique em próxima pergunta para continuar.
+    </p>
+
+    <div class="botoes">
+
+      <button
+        class="dica-btn"
+        (click)="usarDica()"
+        [disabled]="dicaUsada || respondeuPergunta">
+
+        Dica (-25)
+
+      </button>
+
+      <button
+        class="responder-btn"
+        (click)="responder()"
+        [disabled]="respondeuPergunta">
+
+        Responder
+
+      </button>
+
+      <button
+        class="proxima-btn"
+        *ngIf="respondeuPergunta"
+        (click)="proximaPergunta()">
+
+        Próxima pergunta
+
+      </button>
+
+      <button
+        class="pular-btn"
+        (click)="pularPergunta()"
+        [disabled]="respondeuPergunta">
+
+        Pular pergunta (-25)
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <div class="carregando" *ngIf="carregando">
+    Carregando perguntas...
+  </div>
+
+</div>

@@ -1,0 +1,43 @@
+<div class="login-container">
+
+    <div class="login-card">
+
+        <h1>Quiz da Copa</h1>
+
+        <p class="subtitulo">
+            Faça login para jogar
+        </p>
+
+        <label>Nickname</label>
+
+        <input
+            type="text"
+            [(ngModel)]="nickname"
+            placeholder="Digite seu nickname">
+
+        <label>Senha</label>
+
+        <input
+            type="password"
+            [(ngModel)]="senha"
+            placeholder="Digite sua senha">
+
+        <button (click)="entrar()">
+            Entrar
+        </button>
+
+        <p class="cadastro-texto">
+
+            Não possui uma conta?
+
+            <span (click)="irParaCadastro()">
+
+                Cadastre-se
+
+            </span>
+
+        </p>
+
+    </div>
+
+</div>
