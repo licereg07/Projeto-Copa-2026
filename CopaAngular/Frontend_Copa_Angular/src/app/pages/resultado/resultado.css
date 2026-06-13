@@ -1,0 +1,115 @@
+.resultado-container {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url('/images/imagemfundologin.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.resultado-card {
+  width: 520px;
+  max-width: 95%;
+  padding: 40px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0px 8px 30px rgba(0,0,0,0.4);
+  color: white;
+  text-align: center;
+}
+
+.resultado-card h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  margin-bottom: 30px;
+  color: #f1f1f1;
+}
+
+.pontuacao-box {
+  background: rgba(242,195,0,0.25);
+  border: 1px solid rgba(242,195,0,0.7);
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pontuacao-box span {
+  font-size: 18px;
+}
+
+.pontuacao-box strong {
+  font-size: 48px;
+  color: #f2c300;
+}
+
+.estatisticas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.estatistica {
+  background: rgba(255,255,255,0.14);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.estatistica span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.estatistica strong {
+  font-size: 34px;
+  color: #f2c300;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.botoes button {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tentar {
+  background: #009c3b;
+  color: white;
+}
+
+.ranking {
+  background: #f2c300;
+  color: #002776;
+}
+
+.voltar {
+  background: #002776;
+  color: white;
+}
+
+.botoes button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}

@@ -1,1 +1,48 @@
-<p>resultado works!</p>
+<div class="resultado-container">
+
+  <div class="resultado-card">
+
+    <h1>Resultado Final</h1>
+
+    <p class="subtitulo">
+      Você concluiu o quiz!
+    </p>
+
+    <div class="pontuacao-box">
+      <span>Pontuação Final</span>
+      <strong>{{ pontuacao }}</strong>
+    </div>
+
+    <div class="estatisticas">
+
+      <div class="estatistica">
+        <span>Acertos</span>
+        <strong>{{ acertos }}</strong>
+      </div>
+
+      <div class="estatistica">
+        <span>Erros</span>
+        <strong>{{ erros }}</strong>
+      </div>
+
+    </div>
+
+    <div class="botoes">
+
+      <button class="tentar" (click)="tentarNovamente()">
+        Tentar novamente
+      </button>
+
+      <button class="ranking" (click)="irParaRanking()">
+        Ver Ranking
+      </button>
+
+      <button class="voltar" (click)="voltarJogos()">
+        Voltar aos Jogos
+      </button>
+
+    </div>
+
+  </div>
+
+</div>

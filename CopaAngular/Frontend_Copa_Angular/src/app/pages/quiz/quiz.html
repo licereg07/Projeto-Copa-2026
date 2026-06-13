@@ -4,9 +4,10 @@
     Sair do jogo
   </button>
 
-  <div class="quiz-card" *ngIf="!carregando">
+  <div class="quiz-card" *ngIf="perguntaAtual">
 
     <div class="topo-quiz">
+
       <h2>
         Pergunta {{ indicePergunta + 1 }} de {{ perguntas.length }}
       </h2>
@@ -14,6 +15,7 @@
       <span class="dificuldade">
         {{ perguntaAtual.dificuldade }} • {{ perguntaAtual.pontos }} pts
       </span>
+
     </div>
 
     <div class="imagem-area">
@@ -30,7 +32,6 @@
         class="alternativa"
         *ngFor="let alternativa of alternativas"
         [class.selecionada]="alternativaSelecionada === alternativa.letra"
-        [class.bloqueada]="respondeuPergunta"
         (click)="selecionarAlternativa(alternativa.letra)">
 
         <span class="bolinha"></span>
@@ -47,16 +48,12 @@
       💡 {{ perguntaAtual.dica }}
     </div>
 
-    <p class="resposta-registrada" *ngIf="respondeuPergunta">
-      Resposta registrada. Clique em próxima pergunta para continuar.
-    </p>
-
     <div class="botoes">
 
       <button
         class="dica-btn"
         (click)="usarDica()"
-        [disabled]="dicaUsada || respondeuPergunta">
+        [disabled]="dicaUsada">
 
         Dica (-25)
 
@@ -64,26 +61,16 @@
 
       <button
         class="responder-btn"
-        (click)="responder()"
-        [disabled]="respondeuPergunta">
+        (click)="responderEProxima()"
+        [disabled]="!alternativaSelecionada">
 
-        Responder
-
-      </button>
-
-      <button
-        class="proxima-btn"
-        *ngIf="respondeuPergunta"
-        (click)="proximaPergunta()">
-
-        Próxima pergunta
+        Responder e ir para próxima
 
       </button>
 
       <button
         class="pular-btn"
-        (click)="pularPergunta()"
-        [disabled]="respondeuPergunta">
+        (click)="pularPergunta()">
 
         Pular pergunta (-25)
 
@@ -93,8 +80,6 @@
 
   </div>
 
-  <div class="carregando" *ngIf="carregando">
-    Carregando perguntas...
-  </div>
+
 
 </div>
