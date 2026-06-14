@@ -12,9 +12,17 @@
         Pergunta {{ indicePergunta + 1 }} de {{ perguntas.length }}
       </h2>
 
-      <span class="dificuldade">
-        {{ perguntaAtual.dificuldade }} • {{ perguntaAtual.pontos }} pts
-      </span>
+    <span
+      class="dificuldade"
+      [ngClass]="{
+      'facil': perguntaAtual.dificuldade === 'FACIL',
+      'media': perguntaAtual.dificuldade === 'MEDIA',
+      'dificil': perguntaAtual.dificuldade === 'DIFICIL'
+    }">
+
+  {{ perguntaAtual.dificuldade }} • {{ perguntaAtual.pontos }} pts
+
+</span>
 
     </div>
 

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 export interface UsuarioModel {
   id?: number;
   nickname: string;
-  senha: string;
+  senha?: string;
   jogosRealizados?: number;
   maiorPontuacao?: number;
   pontuacaoTotal?: number;
@@ -38,6 +38,10 @@ export class Usuario {
   //exclui conta do usuário
   excluir(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  }
+
+  buscarPorId(id: number): Observable<UsuarioModel> {
+  return this.http.get<UsuarioModel>(`${this.apiUrl}/${id}`);
   }
 
 }

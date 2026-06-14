@@ -1,0 +1,144 @@
+.conta-container {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url('/images/imagemfundologin.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  padding: 0 60px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+}
+
+.navbar button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  color: #f2c300;
+}
+
+.conteudo {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.conta-card {
+  width: 520px;
+  max-width: 95%;
+  padding: 40px;
+  border-radius: 30px;
+  background: rgba(20, 20, 20, 0.45);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0px 12px 40px rgba(0,0,0,0.45);
+  color: white;
+  text-align: center;
+}
+
+.avatar {
+  width: 95px;
+  height: 95px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: rgba(242,195,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+}
+
+.conta-card h1 {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.nickname {
+  color: #f2c300;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.dados {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.dado {
+  background: rgba(255,255,255,0.13);
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dado span {
+  font-weight: bold;
+}
+
+.dado strong {
+  color: #f2c300;
+  font-size: 24px;
+}
+
+.destaque {
+  background: rgba(242,195,0,0.18);
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.botoes button {
+  padding: 15px;
+  border: none;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.voltar {
+  background: #002776;
+  color: white;
+}
+
+.sair {
+  background: #f2c300;
+  color: #002776;
+}
+
+.excluir {
+  background: #d33;
+  color: white;
+}
+
+.botoes button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}

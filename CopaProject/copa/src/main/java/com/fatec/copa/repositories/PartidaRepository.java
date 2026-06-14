@@ -7,9 +7,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.fatec.copa.entities.Partida;
 
-public interface PartidaRepository extends JpaRepository<Partida, Long>{
-    List<Partida> findByUsuarioId(Long usuarioId); //Busca os jogos que aparecem na página Conta.
+public interface PartidaRepository extends JpaRepository<Partida, Long> {
 
-    Optional<Partida> findByUsuarioIdAndCategoriaId(Long usuarioId, Long categoriaId); //Verifica se o usuário já jogou aquele jogo.
-    
+    List<Partida> findByUsuarioId(Long usuarioId);
+
+    Optional<Partida> findByUsuarioIdAndCategoriaId(Long usuarioId, Long categoriaId);
+
+    void deleteByUsuarioId(Long usuarioId);
 }

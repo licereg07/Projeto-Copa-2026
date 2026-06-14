@@ -8,102 +8,102 @@ INSERT INTO TBL_CATEGORIA (ID, NOME) VALUES (4, 'Curiosidades');
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Marcos', 'Taffarel', 'Dida', 'Julio Cesar', 'B', 'Foi o goleiro titular do Brasil na conquista do tetracampeonato em 1994.', 'taffarel.jpg', 'DIFICIL', 100, 1);
+('Quem é esse jogador?', 'Marcos', 'Taffarel', 'Dida', 'Julio Cesar', 'B', 'Foi o goleiro titular do Brasil na conquista do tetracampeonato em 1994.', 'taffarel.png', 'DIFICIL', 100, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Marcos', 'Rogerio Ceni', 'Dida', 'Gomes', 'C', 'Fez parte do elenco campeao mundial de 2002.', 'dida.jpg', 'MEDIA', 65, 1);
+('Quem é esse jogador?', 'Marcos', 'Rogerio Ceni', 'Dida', 'Gomes', 'C', 'Fez parte do elenco campeao mundial de 2002.', 'dida.png', 'MEDIA', 65, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Eder Militao', 'Thiago Silva', 'Marquinhos', 'Bremer', 'C', 'E capitao do Paris Saint-Germain.', 'marquinhos.jpg', 'FACIL', 35, 1);
+('Quem é esse jogador?', 'Eder Militao', 'Thiago Silva', 'Marquinhos', 'Bremer', 'C', 'E capitao do Paris Saint-Germain.', 'marquinhos.png', 'FACIL', 35, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Richarlison', 'Gabriel Jesus', 'Gabriel Martinelli', 'Raphinha', 'B', 'Conquistou titulos importantes atuando pelo Manchester City.', 'gabrieljesus.jpg', 'FACIL', 35, 1);
+('Quem é esse jogador?', 'Richarlison', 'Gabriel Jesus', 'Gabriel Martinelli', 'Raphinha', 'B', 'Conquistou titulos importantes atuando pelo Manchester City.', 'gabrieljesus.png', 'FACIL', 35, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Lucio', 'Marquinhos', 'Thiago Silva', 'Juan', 'C', 'Foi capitao da Selecao Brasileira em diversas ocasioes.', 'thiagosilva.jpg', 'MEDIA', 65, 1);
+('Quem é esse jogador?', 'Lucio', 'Marquinhos', 'Thiago Silva', 'Juan', 'C', 'Foi capitao da Selecao Brasileira em diversas ocasioes.', 'thiagosilva.png', 'MEDIA', 65, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Thierry Henry', 'David Trezeguet', 'Robert Pires', 'Nicolas Anelka', 'A', 'E um dos maiores idolos da historia do Arsenal.', 'henry.jpg', 'FACIL', 35, 1);
+('Quem é esse jogador?', 'Thierry Henry', 'David Trezeguet', 'Robert Pires', 'Nicolas Anelka', 'A', 'E um dos maiores idolos da historia do Arsenal.', 'henry.png', 'FACIL', 35, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Diego Lugano', 'Edinson Cavani', 'Diego Forlan', 'Alvaro Recoba', 'C', 'Foi eleito o melhor jogador da Copa de 2010.', 'forlan.jpg', 'MEDIA', 65, 1);
+('Quem é esse jogador?', 'Diego Lugano', 'Edinson Cavani', 'Diego Forlan', 'Alvaro Recoba', 'C', 'Foi eleito o melhor jogador da Copa de 2010.', 'forlan.png', 'MEDIA', 65, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Mario Gomez', 'Lukas Podolski', 'Miroslav Klose', 'Thomas Muller', 'C', 'E o maior artilheiro da historia das Copas.', 'klose.jpg', 'FACIL', 35, 1);
+('Quem é esse jogador?', 'Mario Gomez', 'Lukas Podolski', 'Miroslav Klose', 'Thomas Muller', 'C', 'E o maior artilheiro da historia das Copas.', 'klose.png', 'FACIL', 35, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Roger Milla', 'Samuel Etoo', 'Rigobert Song', 'Vincent Aboubakar', 'B', 'Conquistou a Champions League pelo Barcelona.', 'etoo.jpg', 'MEDIA', 65, 1);
+('Quem é esse jogador?', 'Roger Milla', 'Samuel Etoo', 'Rigobert Song', 'Vincent Aboubakar', 'B', 'Conquistou a Champions League pelo Barcelona.', 'etoo.png', 'MEDIA', 65, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Dirk Kuyt', 'Robin van Persie', 'Wesley Sneijder', 'Arjen Robben', 'D', 'Ficou famoso por cortar da direita para o meio e finalizar de esquerda.', 'robben.jpg', 'FACIL', 35, 1);
+('Quem é esse jogador?', 'Dirk Kuyt', 'Robin van Persie', 'Wesley Sneijder', 'Arjen Robben', 'D', 'Ficou famoso por cortar da direita para o meio e finalizar de esquerda.', 'robben.png', 'FACIL', 35, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Yaya Toure', 'Didier Drogba', 'Gervinho', 'Salomon Kalou', 'B', 'E considerado um dos maiores idolos da historia do Chelsea.', 'drogba.jpg', 'FACIL', 35, 1);
+('Quem é esse jogador?', 'Yaya Toure', 'Didier Drogba', 'Gervinho', 'Salomon Kalou', 'B', 'E considerado um dos maiores idolos da historia do Chelsea.', 'drogba.png', 'FACIL', 35, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'James Rodriguez', 'Carlos Valderrama', 'Freddy Rincon', 'Rene Higuita', 'B', 'Ficou famoso pelo enorme cabelo loiro encaracolado.', 'valderrama.jpg', 'MEDIA', 65, 1);
+('Quem é esse jogador?', 'James Rodriguez', 'Carlos Valderrama', 'Freddy Rincon', 'Rene Higuita', 'B', 'Ficou famoso pelo enorme cabelo loiro encaracolado.', 'valderrama.png', 'MEDIA', 65, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Fernando Torres', 'David Silva', 'Raul', 'David Villa', 'D', 'Foi campeao do mundo com a Espanha em 2010.', 'davidvilla.jpg', 'MEDIA', 65, 1);
+('Quem é esse jogador?', 'Fernando Torres', 'David Silva', 'Raul', 'David Villa', 'D', 'Foi campeao do mundo com a Espanha em 2010.', 'davidvilla.png', 'MEDIA', 65, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Joao Moutinho', 'Bruno Fernandes', 'Ruben Neves', 'Bernardo Silva', 'C', 'Ficou conhecido internacionalmente jogando pelo Wolverhampton.', 'rubenneves.jpg', 'MEDIA', 65, 1);
+('Quem é esse jogador?', 'Joao Moutinho', 'Bruno Fernandes', 'Ruben Neves', 'Bernardo Silva', 'C', 'Ficou conhecido internacionalmente jogando pelo Wolverhampton.', 'rubenneves.png', 'MEDIA', 65, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Son Heung-min', 'Park Ji-sung', 'Ki Sung-yueng', 'Lee Young-pyo', 'B', 'Foi multicampeao pelo Manchester United de Alex Ferguson.', 'parkjisung.jpg', 'DIFICIL', 100, 1);
+('Quem é esse jogador?', 'Son Heung-min', 'Park Ji-sung', 'Ki Sung-yueng', 'Lee Young-pyo', 'B', 'Foi multicampeao pelo Manchester United de Alex Ferguson.', 'parkjisung.png', 'DIFICIL', 100, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Shinji Kagawa', 'Hidetoshi Nakata', 'Keisuke Honda', 'Yasuhito Endo', 'C', 'E um dos maiores artilheiros do Japao em Mundiais.', 'honda.jpg', 'MEDIA', 65, 1);
+('Quem é esse jogador?', 'Shinji Kagawa', 'Hidetoshi Nakata', 'Keisuke Honda', 'Yasuhito Endo', 'C', 'E um dos maiores artilheiros do Japao em Mundiais.', 'honda.png', 'MEDIA', 65, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Clint Dempsey', 'Tim Howard', 'Landon Donovan', 'Michael Bradley', 'C', 'Marcou um dos gols mais famosos da historia dos EUA em Copas, contra a Argelia em 2010.', 'donovan.jpg', 'DIFICIL', 100, 1);
+('Quem é esse jogador?', 'Clint Dempsey', 'Tim Howard', 'Landon Donovan', 'Michael Bradley', 'C', 'Marcou um dos gols mais famosos da historia dos EUA em Copas, contra a Argelia em 2010.', 'donovan.png', 'DIFICIL', 100, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Pablo Aimar', 'Juan Roman Riquelme', 'Javier Zanetti', 'Juan Sebastian Veron', 'B', 'E um dos maiores idolos da historia do Boca Juniors.', 'riquelme.jpg', 'DIFICIL', 100, 1);
+('Quem é esse jogador?', 'Pablo Aimar', 'Juan Roman Riquelme', 'Javier Zanetti', 'Juan Sebastian Veron', 'B', 'E um dos maiores idolos da historia do Boca Juniors.', 'riquelme.png', 'DIFICIL', 100, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Niko Kovac', 'Davor Suker', 'Ivica Olic', 'Mario Mandzukic', 'B', 'Foi artilheiro da Copa do Mundo de 1998.', 'suker.jpg', 'DIFICIL', 100, 1);
+('Quem é esse jogador?', 'Niko Kovac', 'Davor Suker', 'Ivica Olic', 'Mario Mandzukic', 'B', 'Foi artilheiro da Copa do Mundo de 1998.', 'suker.png', 'DIFICIL', 100, 1);
 
 INSERT INTO TBL_PERGUNTA
 (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
 VALUES
-('Quem é esse jogador?', 'Kleberson', 'Ze Roberto', 'Vampeta', 'Emerson', 'B', 'Ficou famoso por jogar em alto nivel ate os 43 anos.', 'zeroberto.jpg', 'DIFICIL', 100, 1);
+('Quem é esse jogador?', 'Kleberson', 'Ze Roberto', 'Vampeta', 'Emerson', 'B', 'Ficou famoso por jogar em alto nivel ate os 43 anos.', 'zeroberto.png', 'DIFICIL', 100, 1);
 
 -- ESCUDOS (20)
 INSERT INTO TBL_PERGUNTA

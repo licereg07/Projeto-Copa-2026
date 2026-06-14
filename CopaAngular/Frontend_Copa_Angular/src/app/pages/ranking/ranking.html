@@ -1,1 +1,59 @@
-<p>ranking works!</p>
+<div class="ranking-container">
+
+  <header class="navbar">
+    <button (click)="voltarJogos()">Jogos</button>
+    <button>Ranking</button>
+    <button (click)="irParaConta()">Conta 👤</button>
+  </header>
+
+  <main class="conteudo">
+
+    <div class="ranking-card">
+
+      <h1>Ranking</h1>
+
+      <p class="subtitulo">
+        Veja os jogadores com as maiores pontuações
+      </p>
+
+      <div class="tabela-ranking" *ngIf="usuarios.length > 0">
+
+        <div class="linha cabecalho">
+          <span>Posição</span>
+          <span>Jogador</span>
+          <span>Pontuação</span>
+        </div>
+
+        <div
+          class="linha"
+          *ngFor="let usuario of usuarios; let i = index">
+
+          <span class="posicao">
+            {{ pegarMedalha(i) }}
+          </span>
+
+          <span class="nickname">
+            {{ usuario.nickname }}
+          </span>
+
+          <span class="pontuacao">
+            {{ usuario.pontuacaoTotal }} pts
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="vazio" *ngIf="usuarios.length === 0">
+        Nenhum jogador no ranking ainda.
+      </div>
+
+      <button class="voltar-btn" (click)="voltarJogos()">
+        Voltar aos Jogos
+      </button>
+
+    </div>
+
+  </main>
+
+</div>

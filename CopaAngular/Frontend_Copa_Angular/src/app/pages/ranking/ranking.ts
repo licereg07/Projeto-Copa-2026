@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { Usuario, UsuarioModel } from '../../services/usuario';
 
 @Component({
   selector: 'app-ranking',
@@ -6,4 +9,58 @@ import { Component } from '@angular/core';
   templateUrl: './ranking.html',
   styleUrl: './ranking.css',
 })
-export class Ranking {}
+export class Ranking {
+
+  usuarios: UsuarioModel[] = [];
+
+  constructor(
+    private usuarioService: Usuario,
+    private router: Router,
+    private cdr: ChangeDetectorRef
+  ) {}
+
+  ngOnInit() {
+    this.carregarRanking();
+  }
+
+  carregarRanking() {
+    this.usuarioService.ranking().subscribe({
+      next: (resposta) => {
+
+        console.log('Ranking recebido:', resposta);
+
+        this.usuarios = resposta;
+
+        // força o Angular a atualizar a tela
+        this.cdr.detectChanges();
+      },
+      error: (erro) => {
+        console.log('Erro ao carregar ranking:', erro);
+      }
+    });
+  }
+
+  voltarJogos() {
+    this.router.navigate(['/jogos']);
+  }
+
+  irParaConta() {
+    this.router.navigate(['/conta']);
+  }
+
+  pegarMedalha(posicao: number): string {
+    if (posicao === 0) {
+      return '🥇';
+    }
+
+    if (posicao === 1) {
+      return '🥈';
+    }
+
+    if (posicao === 2) {
+      return '🥉';
+    }
+
+    return `${posicao + 1}º`;
+  }
+}

@@ -1,0 +1,150 @@
+.ranking-container {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url('/images/imagemfundologin.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  padding: 0 60px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+}
+
+.navbar button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  color: #f2c300;
+}
+
+.conteudo {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
+
+.ranking-card {
+  width: 720px;
+  max-width: 95%;
+  padding: 42px;
+  border-radius: 28px;
+  background: rgba(20, 20, 20, 0.42);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0px 12px 40px rgba(0,0,0,0.45);
+  color: white;
+  text-align: center;
+}
+
+.ranking-card h1 {
+  font-size: 44px;
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  margin-bottom: 30px;
+  color: #f1f1f1;
+}
+
+.tabela-ranking {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linha {
+  display: grid;
+  grid-template-columns: 110px 1fr 130px;
+  align-items: center;
+  background: rgba(255,255,255,0.13);
+  border-radius: 18px;
+  padding: 17px 22px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.linha:not(.cabecalho):hover {
+  background: rgba(255,255,255,0.22);
+  transform: translateY(-2px);
+}
+
+.cabecalho {
+  background: rgba(255,255,255,0.10);
+  color: #f2c300;
+}
+
+.posicao {
+  font-size: 28px;
+  text-align: center;
+}
+
+.nickname {
+  text-align: center;
+  font-size: 18px;
+}
+
+.pontuacao {
+  color: #f2c300;
+  font-size: 18px;
+  text-align: center;
+}
+
+.vazio {
+  padding: 30px;
+  font-weight: bold;
+  color: #f2c300;
+}
+
+.voltar-btn {
+  margin-top: 30px;
+  width: 280px;
+  padding: 15px;
+  border: none;
+  border-radius: 14px;
+  background: #002776;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.25);
+}
+
+.voltar-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+@media (max-width: 700px) {
+  .linha {
+    grid-template-columns: 80px 1fr 100px;
+    padding: 14px;
+  }
+
+  .ranking-card {
+    padding: 28px;
+  }
+
+  .navbar {
+    justify-content: center;
+    padding: 0 20px;
+  }
+}

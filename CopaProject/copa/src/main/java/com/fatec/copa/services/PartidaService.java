@@ -9,7 +9,11 @@ import org.springframework.stereotype.Service;
 import com.fatec.copa.entities.Categoria;
 import com.fatec.copa.entities.Partida;
 import com.fatec.copa.entities.Usuario;
+import com.fatec.copa.repositories.CategoriaRepository;
 import com.fatec.copa.repositories.PartidaRepository;
+import com.fatec.copa.repositories.UsuarioRepository;
+
+import jakarta.persistence.EntityNotFoundException;
 
 @Service
 public class PartidaService {
@@ -18,70 +22,58 @@ public class PartidaService {
     private PartidaRepository repository;
 
     @Autowired
-    private UsuarioService usuarioService;
+    private UsuarioRepository usuarioRepository;
 
     @Autowired
-    private CategoriaService categoriaService;
+    private CategoriaRepository categoriaRepository;
 
-    // Busca as partidas de um usuário
-    // Será usado na página "Conta"
     public List<Partida> findByUsuarioId(Long usuarioId) {
         return repository.findByUsuarioId(usuarioId);
     }
 
-    // Salva ou atualiza a pontuação de um jogo
-    public Partida salvarOuAtualizar(Long usuarioId, Long categoriaId, Integer pontuacao, Integer acertos) {
+    public Partida salvarOuAtualizar(
+            Long usuarioId,
+            Long categoriaId,
+            Integer pontuacao,
+            Integer acertos) {
 
-        // Busca o usuário que jogou
-        Usuario usuario = usuarioService.findById(usuarioId);
+        Usuario usuario = usuarioRepository.findById(usuarioId)
+                .orElseThrow(() -> new EntityNotFoundException("Usuário não encontrado"));
 
-        // Busca a categoria/jogo jogado
-        Categoria categoria = categoriaService.findById(categoriaId);
+        Categoria categoria = categoriaRepository.findById(categoriaId)
+                .orElseThrow(() -> new EntityNotFoundException("Categoria não encontrada"));
 
-        // Verifica se o usuário já jogou essa categoria antes
-        Partida partida = repository.findByUsuarioIdAndCategoriaId(usuarioId, categoriaId)
+        Partida partida = repository
+                .findByUsuarioIdAndCategoriaId(usuarioId, categoriaId)
                 .orElse(new Partida());
 
-        // Atualiza os dados da partida
         partida.setUsuario(usuario);
         partida.setCategoria(categoria);
         partida.setPontuacao(pontuacao);
         partida.setAcertos(acertos);
         partida.setDataPartida(LocalDateTime.now());
 
-        // Salva a partida no banco
-        Partida partidaSalva = repository.save(partida);
+        repository.save(partida);
 
-        // Recalcula a pontuação total do usuário
-        recalcularPontuacaoUsuario(usuario);
+        List<Partida> partidasDoUsuario = repository.findByUsuarioId(usuarioId);
 
-        return partidaSalva;
-    }
+        int pontuacaoTotal = partidasDoUsuario
+                .stream()
+                .mapToInt(Partida::getPontuacao)
+                .sum();
 
-    // Recalcula os pontos do usuário com base nas partidas salvas
-    public void recalcularPontuacaoUsuario(Usuario usuario) {
+        int maiorPontuacao = partidasDoUsuario
+                .stream()
+                .mapToInt(Partida::getPontuacao)
+                .max()
+                .orElse(0);
 
-        // Busca todas as partidas daquele usuário
-        List<Partida> partidas = repository.findByUsuarioId(usuario.getId());
+        usuario.setPontuacaoTotal(pontuacaoTotal);
+        usuario.setMaiorPontuacao(maiorPontuacao);
+        usuario.setJogosRealizados(partidasDoUsuario.size());
 
-        int total = 0;
-        int maior = 0;
+        usuarioRepository.save(usuario);
 
-        // Soma as pontuações e descobre a maior pontuação
-        for (Partida p : partidas) {
-            total += p.getPontuacao();
-
-            if (p.getPontuacao() > maior) {
-                maior = p.getPontuacao();
-            }
-        }
-
-        // Atualiza os dados do usuário
-        usuario.setPontuacaoTotal(total);
-        usuario.setMaiorPontuacao(maior);
-        usuario.setJogosRealizados(partidas.size());
-
-        // Salva o usuário atualizado
-        usuarioService.update(usuario);
+        return partida;
     }
 }

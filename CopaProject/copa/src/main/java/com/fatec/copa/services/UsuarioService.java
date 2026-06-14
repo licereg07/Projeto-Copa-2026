@@ -4,8 +4,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.fatec.copa.entities.Usuario;
+import com.fatec.copa.repositories.PartidaRepository;
 import com.fatec.copa.repositories.UsuarioRepository;
 
 import jakarta.persistence.EntityNotFoundException;
@@ -15,6 +17,9 @@ public class UsuarioService {
 
     @Autowired
     private UsuarioRepository repository;
+
+    @Autowired
+    private PartidaRepository partidaRepository;
 
     // Lista todos os usuários cadastrados
     public List<Usuario> findAll() {
@@ -35,7 +40,7 @@ public class UsuarioService {
             throw new RuntimeException("Nickname já está em uso");
         }
 
-        // Define valores iniciais da conta
+        // Valores iniciais da conta
         usuario.setPontuacaoTotal(0);
         usuario.setMaiorPontuacao(0);
         usuario.setJogosRealizados(0);
@@ -49,24 +54,32 @@ public class UsuarioService {
                 .orElseThrow(() -> new RuntimeException("Nickname ou senha inválidos"));
     }
 
-    // Exclui a conta do usuário
+    // Exclui usuário e todas as partidas dele
+    @Transactional
     public void deleteById(Long id) {
-        if (repository.existsById(id)) {
-            repository.deleteById(id);
-        } else {
+
+        if (!repository.existsById(id)) {
             throw new EntityNotFoundException("Usuário não encontrado");
         }
+
+        // Primeiro exclui todas as partidas ligadas ao usuário
+        partidaRepository.deleteByUsuarioId(id);
+
+        // Depois exclui o usuário
+        repository.deleteById(id);
     }
 
-    // Ranking ordenado pela maior pontuação total
+    // Ranking ordenado por pontuação total
     public List<Usuario> ranking() {
         return repository.findAll()
                 .stream()
-                .sorted((u1, u2) -> u2.getPontuacaoTotal().compareTo(u1.getPontuacaoTotal()))
+                .sorted((u1, u2) ->
+                    u2.getPontuacaoTotal()
+                      .compareTo(u1.getPontuacaoTotal()))
                 .toList();
     }
 
-    // Atualiza os dados do usuário no banco
+    // Atualiza dados do usuário
     public Usuario update(Usuario usuario) {
         return repository.save(usuario);
     }

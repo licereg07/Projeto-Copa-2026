@@ -1,1 +1,62 @@
-<p>conta works!</p>
+<div class="conta-container">
+
+  <header class="navbar">
+    <button (click)="voltarJogos()">Jogos</button>
+    <button (click)="irParaRanking()">Ranking</button>
+    <button>Conta 👤</button>
+  </header>
+
+  <main class="conteudo">
+
+    <div class="conta-card">
+
+      <div class="avatar">
+        👤
+      </div>
+
+      <h1>Minha Conta</h1>
+
+      <p class="nickname">
+        {{ usuario.nickname }}
+      </p>
+
+      <div class="dados">
+
+        <div class="dado">
+          <span>Jogos realizados</span>
+          <strong>{{ usuario.jogosRealizados || 0 }}</strong>
+        </div>
+
+        <div class="dado">
+          <span>Maior pontuação</span>
+          <strong>{{ usuario.maiorPontuacao || 0 }}</strong>
+        </div>
+
+        <div class="dado destaque">
+          <span>Pontuação total</span>
+          <strong>{{ usuario.pontuacaoTotal || 0 }}</strong>
+        </div>
+
+      </div>
+
+      <div class="botoes">
+
+        <button class="voltar" (click)="voltarJogos()">
+          Voltar aos Jogos
+        </button>
+
+        <button class="sair" (click)="sairConta()">
+          Sair da Conta
+        </button>
+
+        <button class="excluir" (click)="excluirConta()">
+          Excluir Conta
+        </button>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
