@@ -18,7 +18,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @RestController
 @RequestMapping("/usuarios")
-@CrossOrigin(origins = "*")
+@CrossOrigin
 public class UsuarioController {
 
     @Autowired

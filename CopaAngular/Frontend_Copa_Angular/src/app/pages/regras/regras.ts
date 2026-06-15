@@ -50,10 +50,10 @@ export class Regras {
     }
 
     if (this.categoriaId === 3) {
-      this.titulo = 'História da Copa';
+      this.titulo = 'Momentos Marcantes';
       this.quantidadePerguntas = 20;
       this.imagem = '/images/historiainicial.webp';
-      this.descricao = 'Reviva os momentos mais importantes da maior competição de futebol do planeta.';
+      this.descricao = 'Reviva os momentos mais marcantes e memoráveis da maior competição de futebol do planeta.';
     }
 
     if (this.categoriaId === 4) {

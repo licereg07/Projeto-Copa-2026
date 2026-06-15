@@ -252,7 +252,7 @@ export class Quiz {
     }
 
     if (this.categoriaId === 3) {
-      return '/images/historia/' + this.perguntaAtual.imagem;
+      return '/images/momentos/' + this.perguntaAtual.imagem;
     }
 
     return '/images/curiosidades/' + this.perguntaAtual.imagem;

@@ -14,7 +14,7 @@ import com.fatec.copa.services.PartidaService;
 
 @RestController
 @RequestMapping("/partidas")
-@CrossOrigin(origins = "*")
+@CrossOrigin
 public class PartidaController {
 
     @Autowired

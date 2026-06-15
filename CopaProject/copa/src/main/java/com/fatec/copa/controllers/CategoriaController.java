@@ -11,7 +11,7 @@ import com.fatec.copa.services.CategoriaService;
 
 @RestController
 @RequestMapping("/categorias")
-@CrossOrigin(origins = "*")
+@CrossOrigin
 public class CategoriaController {
 
     @Autowired

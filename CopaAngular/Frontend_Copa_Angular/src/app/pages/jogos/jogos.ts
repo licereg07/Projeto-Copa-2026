@@ -20,7 +20,7 @@ export class Jogos {
     {
       id: 2,
       nome: 'Escudos das Seleções',
-      perguntas: 15,
+      perguntas: 20,
       imagem: '/images/escudosinicial.png'
     },
     {
@@ -31,8 +31,8 @@ export class Jogos {
     },
     {
       id: 3,
-      nome: 'História da Copa',
-      perguntas: 20,
+      nome: 'Momentos Marcantes',
+      perguntas: 15,
       imagem: '/images/historiainicial.webp'
     }
   ];

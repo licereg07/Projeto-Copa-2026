@@ -13,7 +13,7 @@ import com.fatec.copa.services.PerguntaService;
 
 @RestController
 @RequestMapping("/perguntas")
-@CrossOrigin(origins = "*")
+@CrossOrigin
 public class PerguntaController {
 
     @Autowired
