@@ -29,7 +29,7 @@ public class PerguntaService {
     }
 
     // Busca perguntas de uma categoria específica
-    // Exemplo: categoria 1 = jogadores, categoria 2 = mascotes
+    // categoria 1 = jogadores, categoria 4 = curiosidades
     public List<Pergunta> findByCategoriaId(Long categoriaId) {
         return repository.findByCategoriaId(categoriaId);
     }

@@ -31,49 +31,51 @@ public class PartidaService {
         return repository.findByUsuarioId(usuarioId);
     }
 
+   
     public Partida salvarOuAtualizar(
             Long usuarioId,
             Long categoriaId,
             Integer pontuacao,
             Integer acertos) {
 
+       
         Usuario usuario = usuarioRepository.findById(usuarioId)
                 .orElseThrow(() -> new EntityNotFoundException("Usuário não encontrado"));
 
+       
         Categoria categoria = categoriaRepository.findById(categoriaId)
                 .orElseThrow(() -> new EntityNotFoundException("Categoria não encontrada"));
 
+        // verifica se o usuário já jogou essa categoria
         Partida partida = repository
                 .findByUsuarioIdAndCategoriaId(usuarioId, categoriaId)
                 .orElse(new Partida());
-
+   
         partida.setUsuario(usuario);
         partida.setCategoria(categoria);
         partida.setPontuacao(pontuacao);
         partida.setAcertos(acertos);
-        partida.setDataPartida(LocalDateTime.now());
-
-        repository.save(partida);
-
+        repository.save(partida);   
         List<Partida> partidasDoUsuario = repository.findByUsuarioId(usuarioId);
 
+        // Soma a pontuação de todas as categorias
         int pontuacaoTotal = partidasDoUsuario
                 .stream()
                 .mapToInt(Partida::getPontuacao)
                 .sum();
 
+        //qual foi a maior pontuação obtida
         int maiorPontuacao = partidasDoUsuario
                 .stream()
                 .mapToInt(Partida::getPontuacao)
                 .max()
                 .orElse(0);
 
+        
         usuario.setPontuacaoTotal(pontuacaoTotal);
         usuario.setMaiorPontuacao(maiorPontuacao);
-        usuario.setJogosRealizados(partidasDoUsuario.size());
-
+        usuario.setJogosRealizados(partidasDoUsuario.size());      
         usuarioRepository.save(usuario);
-
         return partida;
     }
 }

@@ -11,6 +11,7 @@ public interface PartidaRepository extends JpaRepository<Partida, Long> {
 
     List<Partida> findByUsuarioId(Long usuarioId);
 
+    //verifica se o usuário já jogou a categoria
     Optional<Partida> findByUsuarioIdAndCategoriaId(Long usuarioId, Long categoriaId);
 
     void deleteByUsuarioId(Long usuarioId);

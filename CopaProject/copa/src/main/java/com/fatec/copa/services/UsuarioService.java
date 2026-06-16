@@ -21,26 +21,25 @@ public class UsuarioService {
     @Autowired
     private PartidaRepository partidaRepository;
 
-    // Lista todos os usuários cadastrados
+    // lista todos os usuários cadastrados
     public List<Usuario> findAll() {
         return repository.findAll();
     }
 
-    // Busca usuário pelo ID
+    // busca usuário pelo ID
     public Usuario findById(Long id) {
         return repository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Usuário não encontrado"));
     }
 
-    // Cadastra um novo usuário
     public Usuario save(Usuario usuario) {
 
-        // Verifica se o nickname já existe
+        // verifica se o nickname já existe
         if (repository.existsByNickname(usuario.getNickname())) {
             throw new RuntimeException("Nickname já está em uso");
         }
 
-        // Valores iniciais da conta
+        // valores iniciais da conta
         usuario.setPontuacaoTotal(0);
         usuario.setMaiorPontuacao(0);
         usuario.setJogosRealizados(0);
@@ -48,13 +47,12 @@ public class UsuarioService {
         return repository.save(usuario);
     }
 
-    // Faz login usando nickname e senha
     public Usuario login(String nickname, String senha) {
         return repository.findByNicknameAndSenha(nickname, senha)
                 .orElseThrow(() -> new RuntimeException("Nickname ou senha inválidos"));
     }
 
-    // Exclui usuário e todas as partidas dele
+    // exclui usuário e todas as partidas dele
     @Transactional
     public void deleteById(Long id) {
 
@@ -62,14 +60,14 @@ public class UsuarioService {
             throw new EntityNotFoundException("Usuário não encontrado");
         }
 
-        // Primeiro exclui todas as partidas ligadas ao usuário
+        // primeiro temq excluir todas as partidas do usuario
         partidaRepository.deleteByUsuarioId(id);
 
         // Depois exclui o usuário
         repository.deleteById(id);
     }
 
-    // Ranking ordenado por pontuação total
+    // Ranking
     public List<Usuario> ranking() {
         return repository.findAll()
                 .stream()

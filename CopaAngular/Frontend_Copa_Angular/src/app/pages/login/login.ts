@@ -25,22 +25,22 @@ export class Login {
     entrar() {
 
     // verifica se os campos foram preenchidos
-if (!this.nickname || !this.senha) {
+  if (!this.nickname || !this.senha) {
 
-  Swal.fire({
+      Swal.fire({
 
-    icon: 'warning',
+      icon: 'warning',
 
-    title: 'Campos obrigatórios',
+      title: 'Campos obrigatórios',
 
-    text: 'Preencha nickname e senha.',
+      text: 'Preencha nickname e senha.',
 
-    confirmButtonColor: '#009c3b'
+      confirmButtonColor: '#009c3b'
 
-  });
+   });
 
-  return;
-}
+    return;
+  }
 
     const usuario: UsuarioModel = {
 
@@ -79,7 +79,7 @@ if (!this.nickname || !this.senha) {
 
   });
 
-}
+  }
 
     });
 

@@ -5,206 +5,86 @@ INSERT INTO TBL_CATEGORIA (ID, NOME) VALUES (3, 'Momentos');
 INSERT INTO TBL_CATEGORIA (ID, NOME) VALUES (4, 'Curiosidades');
 
 -- JOGADORES (20)
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Marcos', 'Taffarel', 'Dida', 'Julio Cesar', 'B', 'Foi o goleiro titular do Brasil na conquista do tetracampeonato em 1994.', 'taffarel.png', 'DIFICIL', 100, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Marcos', 'Taffarel', 'Dida', 'Júlio César', 'B', 'Foi o goleiro titular do Brasil na conquista do tetracampeonato em 1994.', 'taffarel.png', 'MEDIA', 65, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Marcos', 'Rogerio Ceni', 'Dida', 'Gomes', 'C', 'Fez parte do elenco campeao mundial de 2002.', 'dida.png', 'MEDIA', 65, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Marcos', 'Rogério Ceni', 'Dida', 'Gomes', 'C', 'Fez parte do elenco campeão mundial de 2002.', 'dida.png', 'MEDIA', 65, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Eder Militao', 'Thiago Silva', 'Marquinhos', 'Bremer', 'C', 'E capitao do Paris Saint-Germain.', 'marquinhos.png', 'FACIL', 35, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Éder Militão', 'Thiago Silva', 'Marquinhos', 'Bremer', 'C', 'É capitão do Paris Saint-Germain.', 'marquinhos.png', 'FACIL', 35, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Richarlison', 'Gabriel Jesus', 'Gabriel Martinelli', 'Raphinha', 'B', 'Conquistou titulos importantes atuando pelo Manchester City.', 'gabrieljesus.png', 'FACIL', 35, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Richarlison', 'Gabriel Jesus', 'Gabriel Martinelli', 'Raphinha', 'B', 'Conquistou títulos importantes atuando pelo Manchester City.', 'gabrieljesus.png', 'FACIL', 35, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Lucio', 'Marquinhos', 'Thiago Silva', 'Juan', 'C', 'Foi capitao da Selecao Brasileira em diversas ocasioes.', 'thiagosilva.png', 'MEDIA', 65, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Lúcio', 'Marquinhos', 'Thiago Silva', 'Juan', 'C', 'Foi capitão da Seleção Brasileira em diversas ocasiões.', 'thiagosilva.png', 'MEDIA', 65, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Thierry Henry', 'David Trezeguet', 'Robert Pires', 'Nicolas Anelka', 'A', 'E um dos maiores idolos da historia do Arsenal.', 'thierry.png', 'FACIL', 35, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Thierry Henry', 'David Trezeguet', 'Robert Pires', 'Nicolas Anelka', 'A', 'É um dos maiores ídolos da história do Arsenal.', 'thierry.png', 'FACIL', 35, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Diego Lugano', 'Edinson Cavani', 'Diego Forlan', 'Alvaro Recoba', 'C', 'Foi eleito o melhor jogador da Copa de 2010.', 'forlan.png', 'MEDIA', 65, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Diego Lugano', 'Edinson Cavani', 'Diego Forlán', 'Álvaro Recoba', 'C', 'Foi eleito o melhor jogador da Copa de 2010.', 'forlan.png', 'MEDIA', 65, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Mario Gomez', 'Lukas Podolski', 'Miroslav Klose', 'Thomas Muller', 'C', 'E o maior artilheiro da historia das Copas.', 'klose.png', 'FACIL', 35, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Mario Gomez', 'Lukas Podolski', 'Miroslav Klose', 'Thomas Müller', 'C', 'É o maior artilheiro da história das Copas.', 'klose.png', 'FACIL', 35, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Roger Milla', 'Samuel Etoo', 'Rigobert Song', 'Vincent Aboubakar', 'B', 'Conquistou a Champions League pelo Barcelona.', 'etoo.png', 'MEDIA', 65, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Roger Milla', 'Samuel Etoo', 'Rigobert Song', 'Vincent Aboubakar', 'B', 'Conquistou a Champions League pelo Barcelona.', 'etoo.png', 'MEDIA', 65, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Dirk Kuyt', 'Robin van Persie', 'Wesley Sneijder', 'Arjen Robben', 'D', 'Ficou famoso por cortar da direita para o meio e finalizar de esquerda.', 'robben.png', 'FACIL', 35, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Dirk Kuyt', 'Robin van Persie', 'Wesley Sneijder', 'Arjen Robben', 'D', 'Ficou famoso por cortar da direita para o meio e finalizar de esquerda.', 'robben.png', 'FACIL', 35, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Yaya Toure', 'Didier Drogba', 'Gervinho', 'Salomon Kalou', 'B', 'E considerado um dos maiores idolos da historia do Chelsea.', 'drogba.png', 'FACIL', 35, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Yaya Touré', 'Didier Drogba', 'Gervinho', 'Salomon Kalou', 'B', 'É considerado um dos maiores ídolos da história do Chelsea.', 'drogba.png', 'FACIL', 35, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'James Rodriguez', 'Carlos Valderrama', 'Freddy Rincon', 'Rene Higuita', 'B', 'Ficou famoso pelo enorme cabelo loiro encaracolado.', 'valderrama.png', 'MEDIA', 65, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'James Rodríguez', 'Carlos Valderrama', 'Freddy Rincón', 'René Higuita', 'B', 'Ficou famoso pelo enorme cabelo loiro encaracolado.', 'valderrama.png', 'MEDIA', 65, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Fernando Torres', 'David Silva', 'Raul', 'David Villa', 'D', 'Foi campeao do mundo com a Espanha em 2010.', 'villa.png', 'MEDIA', 65, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Fernando Torres', 'David Silva', 'Raúl', 'David Villa', 'D', 'Foi campeão do mundo com a Espanha em 2010.', 'villa.png', 'MEDIA', 65, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Joao Moutinho', 'Bruno Fernandes', 'Ruben Neves', 'Bernardo Silva', 'C', 'Ficou conhecido internacionalmente jogando pelo Wolverhampton.', 'rubenneves.png', 'MEDIA', 65, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'João Moutinho', 'Bruno Fernandes', 'Rúben Neves', 'Bernardo Silva', 'C', 'Ficou conhecido internacionalmente jogando pelo Wolverhampton.', 'rubenneves.png', 'MEDIA', 65, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Son Heung-min', 'Park Ji-sung', 'Ki Sung-yueng', 'Lee Young-pyo', 'B', 'Foi multicampeao pelo Manchester United de Alex Ferguson.', 'jisung.png', 'DIFICIL', 100, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Son Heung-min', 'Park Ji-sung', 'Ki Sung-yueng', 'Lee Young-pyo', 'B', 'Foi multicampeão pelo Manchester United de Alex Ferguson.', 'jisung.png', 'DIFICIL', 100, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Shinji Kagawa', 'Hidetoshi Nakata', 'Keisuke Honda', 'Yasuhito Endo', 'C', 'E um dos maiores artilheiros do Japao em Mundiais.', 'keisuke.png', 'MEDIA', 65, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Shinji Kagawa', 'Hidetoshi Nakata', 'Keisuke Honda', 'Yasuhito Endō', 'C', 'É um dos maiores artilheiros do Japão em Mundiais.', 'keisuke.png', 'MEDIA', 65, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Clint Dempsey', 'Tim Howard', 'Landon Donovan', 'Michael Bradley', 'C', 'Marcou um dos gols mais famosos da historia dos EUA em Copas, contra a Argelia em 2010.', 'donovan.png', 'DIFICIL', 100, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Clint Dempsey', 'Tim Howard', 'Landon Donovan', 'Michael Bradley', 'C', 'Marcou um dos gols mais famosos da história dos EUA em Copas, contra a Argélia em 2010.', 'donovan.png', 'DIFICIL', 100, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Pablo Aimar', 'Juan Roman Riquelme', 'Javier Zanetti', 'Juan Sebastian Veron', 'B', 'E um dos maiores idolos da historia do Boca Juniors.', 'riquelme.png', 'DIFICIL', 100, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Pablo Aimar', 'Juan Román Riquelme', 'Javier Zanetti', 'Juan Sebastián Verón', 'B', 'É um dos maiores ídolos da história do Boca Juniors.', 'riquelme.png', 'DIFICIL', 100, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Niko Kovac', 'Davor Suker', 'Ivica Olic', 'Mario Mandzukic', 'B', 'Foi artilheiro da Copa do Mundo de 1998.', 'suker.png', 'DIFICIL', 100, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Niko Kovač', 'Davor Šuker', 'Ivica Olić', 'Mario Mandžukić', 'B', 'Foi artilheiro da Copa do Mundo de 1998.', 'suker.png', 'DIFICIL', 100, 1);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Quem é esse jogador?', 'Kleberson', 'Ze Roberto', 'Vampeta', 'Emerson', 'B', 'Ficou famoso por jogar em alto nivel ate os 43 anos.', 'zeroberto.png', 'DIFICIL', 100, 1);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Quem é esse jogador?', 'Kléberson', 'Zé Roberto', 'Vampeta', 'Émerson', 'B', 'Ficou famoso por jogar em alto nível até os 43 anos.', 'zeroberto.png', 'DIFICIL', 100, 1);
 
 -- ESCUDOS (20)
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Argentina', 'Uruguai', 'Chile', 'Panamá', 'A', 'Atual campea mundial.', 'argentina.png', 'FACIL', 35, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Argentina', 'Uruguai', 'Chile', 'Panamá', 'A', 'Atual campeã mundial.', 'argentina.png', 'FACIL', 35, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'França', 'Bélgica', 'Holanda', 'Suíca', 'A', 'Campea das Copas de 1998 e 2018.', 'frança.png', 'FACIL', 35, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'França', 'Bélgica', 'Holanda', 'Suíça', 'A', 'Campeã das Copas de 1998 e 2018.', 'frança.png', 'FACIL', 35, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Alemanha', 'Áustria', 'Colômbia', 'Bélgica', 'A', 'Possui quatro titulos mundiais.', 'alemanha.png', 'FACIL', 35, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Alemanha', 'Áustria', 'Colômbia', 'Bélgica', 'A', 'Possui quatro títulos mundiais.', 'alemanha.png', 'FACIL', 35, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Espanha', 'Portugal', 'Marrocos', 'México', 'A', 'Campea mundial em 2010.', 'espanha.png', 'MEDIA', 65, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Espanha', 'Portugal', 'Marrocos', 'México', 'A', 'Campeã mundial em 2010.', 'espanha.png', 'MEDIA', 65, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Portugal', 'Espanha', 'Cabo Verde', 'Croácia', 'A', 'Selecao de Cristiano Ronaldo.', 'portugal.png', 'FACIL', 35, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Portugal', 'Espanha', 'Cabo Verde', 'Croácia', 'A', 'Seleção de Cristiano Ronaldo.', 'portugal.png', 'FACIL', 35, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Inglaterra', 'Marrocos', 'Irlanda', 'Curaçao', 'A', 'Campea da Copa de 1966.', 'inglaterra.png', 'DIFICIL', 100, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Inglaterra', 'Marrocos', 'Irlanda', 'Curaçao', 'A', 'Campeã da Copa de 1966.', 'inglaterra.png', 'DIFICIL', 100, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Holanda', 'Bélgica', 'Luxemburgo', 'Tchéquia', 'A', 'Vice-campea mundial tres vezes.', 'holanda.png', 'FACIL', 35, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Holanda', 'Bélgica', 'Luxemburgo', 'Tchéquia', 'A', 'Vice-campeã mundial três vezes.', 'holanda.png', 'FACIL', 35, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Bélgica', 'Holanda', 'Alemanha', 'Suíça', 'A', 'Terceiro lugar na Copa de 2018.', 'belgica.png', 'MEDIA', 65, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Bélgica', 'Holanda', 'Alemanha', 'Suíça', 'A', 'Terceiro lugar na Copa de 2018.', 'belgica.png', 'MEDIA', 65, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Uruguai', 'Argentina', 'Paraguai', 'Chile', 'A', 'Primeira campea da historia das Copas.', 'uruguai.png', 'FACIL', 35, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Uruguai', 'Argentina', 'Paraguai', 'Chile', 'A', 'Primeira campeã da história das Copas.', 'uruguai.png', 'FACIL', 35, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Croácia', 'Sérvia', 'Uruguai', 'Suécia', 'A', 'Vice-campea da Copa de 2018.', 'croacia.png', 'DIFICIL', 100, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Croácia', 'Sérvia', 'Uruguai', 'Suécia', 'A', 'Vice-campeã da Copa de 2018.', 'croacia.png', 'DIFICIL', 100, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'México', 'Colômbia', 'Equador', 'Venezuela', 'A', 'Uma das selecoes mais tradicionais da CONCACAF.', 'mexico.png', 'DIFICIL', 100, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'México', 'Colômbia', 'Equador', 'Venezuela', 'A', 'Uma das seleções mais tradicionais da CONCACAF.', 'mexico.png', 'DIFICIL', 100, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Estados Unidos', 'Espanha', 'Jordânia', 'Japão', 'A', 'Pais-sede da Copa de 2026.', 'usa.png', 'DIFICIL', 100, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Estados Unidos', 'Espanha', 'Jordânia', 'Japão', 'A', 'País-sede da Copa de 2026.', 'usa.png', 'DIFICIL', 100, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Japão', 'Estados Unidos', 'China', 'Iraque', 'A', 'Foi uma das sedes da Copa de 2002.', 'japao.png', 'DIFICIL', 100, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Japão', 'Estados Unidos', 'China', 'Iraque', 'A', 'Foi uma das sedes da Copa de 2002.', 'japao.png', 'DIFICIL', 100, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Coreia do Sul', 'Japão', 'China', 'Catar', 'A', 'Chegou as semifinais da Copa de 2002.', 'coreia.png', 'FACIL', 35, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Coreia do Sul', 'Japão', 'China', 'Catar', 'A', 'Chegou às semifinais da Copa de 2002.', 'coreia.png', 'FACIL', 35, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Marrocos', 'Haiti', 'Polônia', 'Tunísia', 'A', 'Primeira selecao africana semifinalista.', 'marrocos.png', 'FACIL', 35, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Marrocos', 'Haiti', 'Polônia', 'Tunísia', 'A', 'Primeira seleção africana semifinalista.', 'marrocos.png', 'FACIL', 35, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Canadá', 'Estados Unidos', 'Catar', 'Colômbia', 'A', 'Um dos paises-sede da Copa de 2026.', 'canada.png', 'FACIL', 35, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Canadá', 'Estados Unidos', 'Catar', 'Colômbia', 'A', 'Um dos países-sede da Copa de 2026.', 'canada.png', 'FACIL', 35, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Senegal', 'Camarões', 'Gana', 'Nigéria', 'A', 'Pais de Sadio Mane.', 'senegal.png', 'DIFICIL', 100, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Senegal', 'Camarões', 'Gana', 'Nigéria', 'A', 'País de Sadio Mané.', 'senegal.png', 'DIFICIL', 100, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Suíça', 'Áustria', 'Bélgica', 'Dinamarca', 'A', 'Pais conhecido pelos Alpes.', 'suica.png', 'DIFICIL', 100, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Suíça', 'Áustria', 'Bélgica', 'Dinamarca', 'A', 'País conhecido pelos Alpes.', 'suica.png', 'DIFICIL', 100, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Dinamarca', 'Suécia', 'Noruega', 'Finlândia', 'A', 'Campea da Eurocopa de 1992.', 'dinamarca.png', 'DIFICIL', 100, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Dinamarca', 'Suécia', 'Noruega', 'Finlândia', 'A', 'Campeã da Eurocopa de 1992.', 'dinamarca.png', 'DIFICIL', 100, 2);
 
-INSERT INTO TBL_PERGUNTA
-(ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID)
-VALUES
-('Que escudo é esse?', 'Sérvia', 'Escócia', 'Tchéquia', 'Japão', 'A', 'Herdou parte da tradicao da antiga Iugoslavia.', 'servia.png', 'DIFICIL', 100, 2);
+INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Que escudo é esse?', 'Sérvia', 'Escócia', 'Tchéquia', 'Japão', 'A', 'Herdou parte da tradição da antiga Iugoslávia.', 'servia.png', 'DIFICIL', 100, 2);
 
 -- CURIOSIDADES (25)
 INSERT INTO TBL_PERGUNTA (ENUNCIADO, ALTERNATIVAA, ALTERNATIVAB, ALTERNATIVAC, ALTERNATIVAD, RESPOSTA_CORRETA, DICA, IMAGEM, DIFICULDADE, PONTOS, CATEGORIA_ID) VALUES ('Qual foi a única Copa do Mundo sem uma final oficial?', '1930', '1934', '1938', '1950', 'D', 'O campeão foi definido por um grupo final.', 'copa1930.png', 'DIFICIL', 100, 4);
